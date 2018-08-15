@@ -63,7 +63,7 @@ public class abc {
                 {System.out.println("Enter one to vote the "+i+" or two to vote the "+j);
                   int ch=sc.nextInt();
                   if(ch==1)
-                   {r[i]++;
+                   {r[i]++;a=r[i];
                     list.get(i).add(j);
 					list.get(j).add(i);
                    }
