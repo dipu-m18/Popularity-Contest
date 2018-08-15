@@ -138,8 +138,10 @@ public class abc {
                    while(ch=='Y' || ch=='y')
                     {
      					ArrayList<HashSet<Integer>> arlist= new ArrayList<HashSet<Integer>>(r.length);
-			            enterRank(r,arrlist);  //function to enter rank. 
-			            rating(r,arrlist);          //function to rate the items.
+			            for(int i=0;i<r.length;i++)
+	                    {  arlist.add(i, new HashSet<Integer>());             
+	                    } 
+						rating(r,arlist);          //function to rate the items.
 		                maxx(r,s);				
 			            System.out.println("Enter 'Y' or 'y'to continue for next user");
 		                ch=sc.next().charAt(0);//check if whether other user also want to rate	
